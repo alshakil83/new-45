@@ -23,6 +23,6 @@ fwrite($handle,"\r\n");
 }
 fwrite($handle,"\r\n");
 fclose($handle);
-header("location:http://127.0.0.1:5500/index.html");
+header("location:https://alshakil83.github.io/new-45/");
 exit;
 ?>
